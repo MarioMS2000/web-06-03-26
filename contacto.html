@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contacto | Mi web</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -25,36 +25,36 @@
         <section class="contact">
             <h1>Contacto</h1>
             <p>Rellena el formulario y te respondo lo antes posible.</p>
+
+            <form class="form" action="#" method="post">
+                <div class="form__row">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre" />
+                </div>
+
+                <div class="form__row">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="tu@email.com" />
+                </div>
+
+                <div class="form__row">
+                    <label for="motivo">Motivo</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Selecciona…</option>
+                        <option>Trabajo</option>
+                        <option>Colaboración</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+
+                <div class="form__row">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntame..."></textarea>
+                </div>
+
+                <button class="btn" type="submit">Enviar</button>
+            </form>
         </section>
-
-        <form class="form" action="#" method="post">
-            <div class="form_row">
-                <label for="nombre">Nombre</label>
-                <input id="nombre" name="nombre" type="text" required placeholder="Tu nombre" />
-            </div>
-
-            <div class="form_row">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" required placeholder="tu@email.com" />
-            </div>
-
-            <div class="form_row">
-                <label for="motivo">Motivo</label>
-                <select id="motivo" name="motivo" required>
-                    <option value="">Selecciona...</option>
-                    <option>Trabajo</option>
-                    <option>Colaboraciones</option>
-                    <option>Otro</option>
-                </select>
-            </div>
-
-            <div class="from_row">
-                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntame..."></textarea>
-            </div>
-
-            <button class="btn" type="submit">Enviar</button>
-
-        </form>
     </main>
 
     <footer class="site-footer">
